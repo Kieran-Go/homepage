@@ -1,3 +1,23 @@
+/* Fonts */
+@font-face {
+    font-family: 'PlayfairDisplay';
+    src: url('../media/fonts/PlayfairDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../media/fonts/Roboto-VariableFont.ttf') format('truetype');
+    font-weight: 100 900; /* Specify the range of weights (for example, 100 to 900) */
+    font-style: normal;
+}
+
+body{
+    font-family: 'Roboto';
+}
+
+/* Background */
 .background-wrap{
     filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
 }
@@ -7,10 +27,7 @@
     clip-path: polygon(0 0, 100% 0, 100% 30%, 0 100%);
 }
 
-h2{
-    margin: 0;
-}
-
+/* About me section */
 .about-container {
     max-width: 1200px;
     padding: 20px;
@@ -37,8 +54,10 @@ h2{
     position: absolute;
     bottom: 5px;
     margin: 0; 
-    width: 100%;
+    width: 400px;
     font-size: 3em;
+    font-family: 'PlayfairDisplay';
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
 }
 
 .about-text-area{
@@ -48,7 +67,10 @@ h2{
     background-color: rgb(227, 227, 227);
     border-radius: 5px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
-
+}
+h2{
+    margin: 0;
+    font-family: 'PlayfairDisplay';
 }
 
 .about-links{
@@ -88,8 +110,7 @@ h2{
     }
 
     .about-name {
-        width: 300px;
-        top: -30%;
+        top: -25%;
         left: 85%;
     }
 
