@@ -1,0 +1,66 @@
+.background-wrap{
+    filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
+}
+.background {
+    height: 400px;
+    background-color: rgb(74, 180, 192);
+    clip-path: polygon(0 0, 100% 0, 100% 30%, 0 100%);
+}
+
+h2{
+    margin: 0;
+}
+
+.about-container {
+    max-width: 1200px;
+    padding: 20px;
+    position: absolute;
+    top: 5%; 
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+}
+
+.about-img-area {
+    position: relative;
+    width: 600px;
+}
+
+.about-img-area img {
+    width: 100%;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.about-name {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    bottom: 5px;
+    margin: 0; 
+    width: 100%;
+    font-size: 3em;
+}
+
+.about-text-area{
+    width: 800px;
+    height: fit-content;
+    padding: 20px;
+    background-color: rgb(227, 227, 227);
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.about-links{
+    display: grid;
+    justify-content: right;
+}
+.github-img{
+    width: 30px;
+    will-change: transform;
+    transition: transform 0.2s ease-in-out;
+}
+.github-img:hover{
+    cursor: pointer;
+    transform: scale(1.25);
+}
