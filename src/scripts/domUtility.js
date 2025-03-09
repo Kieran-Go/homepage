@@ -72,3 +72,16 @@ export function newLabel(isFor, text = null, id = null, classes = []) {
   }
   return label;
 }
+
+// Function to streamline creating a hyperlink container
+export function newHyperlink(href, target = "_blank", rel = "noopener noreferrer") {
+  const a = document.createElement("a");
+
+  a.href = href;
+
+  a.target = target;
+  
+  a.rel = rel;
+
+  return a;
+}

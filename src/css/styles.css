@@ -13,6 +13,11 @@
     font-style: normal;
 }
 
+/* Variables */
+:root {
+    --bg-color: rgb(52, 74, 248);
+}
+
 body{
     font-family: 'Roboto';
 }
@@ -35,7 +40,7 @@ h1, h2{
 }
 .background {
     min-height: 400px;
-    background-color: rgb(74, 180, 192);
+    background-color: var(--bg-color);
     clip-path: polygon(0 0, 100% 0, 100% 30%, 0 100%);
 }
 
@@ -112,6 +117,7 @@ h1, h2{
     margin: 20px;
     margin-top: 0px;
     margin-bottom: 30px;
+    margin-left: 40px;
 }
 
 .projects{
@@ -126,6 +132,7 @@ h1, h2{
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
     width: 300px;
     height: 350px;
+    margin-bottom: 20px;
     will-change: transform;
     transition: transform 0.3s ease-in-out;
 }
@@ -160,7 +167,7 @@ h1, h2{
 /* Footer section */
 footer{
     width: 100%;
-    background-color: rgb(74, 180, 192);
+    background-color: var(--bg-color);
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-bottom: 20px;
@@ -225,6 +232,13 @@ footer{
 
     .project-section{
         width: 90%
+    }
+
+    .project-section h1{
+        font-family: 'PlayfairDisplay';
+        margin: 20px;
+        margin-top: 0px;
+        margin-bottom: 30px;
     }
 
     .projects{

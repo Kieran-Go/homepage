@@ -25,7 +25,7 @@
 
                 <nav class="about-links">
                   <a href="https://github.com/Kieran-Go" target="_blank" rel="noopener noreferrer">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" class="link-img" alt="GitHub">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" class="link-img" alt="GitHub logo">
                   </a>
                 </nav>
               </div>
@@ -37,34 +37,6 @@
       <h1>My Work</h1>
 
       <div class="projects">
-        <div class="project-container">
-          <img src="media/images/screenshot_placeholder.JPG" alt="Screenshot of a project">
-
-          <div class="project-info">
-            <div class="project-header">
-              <h2>Project Name</h2>
-
-              <div class="project-nav">
-                <a href="https://github.com/Kieran-Go" target="_blank" rel="noopener noreferrer">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" class="link-img" alt="GitHub">
-                </a>
-
-                <a href="https://github.com/Kieran-Go" target="_blank" rel="noopener noreferrer">
-                  <img src="./media/images/open-in-new.svg" class="link-img" alt="GitHub">
-                </a>
-                
-              </div>
-            </div>
-            <p>Short description of the project. Just a couple sentences will do.</p>
-          </div>
-        </div>
-
-        
-        <div class="project-container">
-          
-        </div>
-        <div class="project-container">
-        </div>
       </div>
     </section>
 
@@ -79,17 +51,15 @@
         </div>
 
         <a href="https://github.com/Kieran-Go" target="_blank" rel="noopener noreferrer">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" class="link-img" alt="GitHub">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" class="link-img" alt="GitHub logo">
         </a>
       </div>
 
-      <img
-      class="footer-img"
-      srcset="media/images/man_smiling_cropped.jpg 1200w, media/images/man_smiling.jpg 5471w" 
-      sizes="(max-width: 1200px) 70vw, 5471px"
-      src="media/images/man_smiling.jpg"
-      alt="A man sitting at a computer desk and smiling at the camera"
-      />
+      <picture>
+        <source srcset="media/images/man_smiling.jpg" media="(min-width: 1200px)">
+        <source srcset="media/images/man_smiling_cropped.jpg" media="(min-width: 200px)">
+        <img class="footer-img" alt="A man sitting at a computer desk and smiling at the camera">
+      </picture>
 
     </footer>
 
